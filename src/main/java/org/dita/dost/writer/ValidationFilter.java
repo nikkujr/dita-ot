@@ -221,7 +221,7 @@ public final class ValidationFilter extends AbstractXMLFilter {
                   if (res == null) {
                     res = new AttributesImpl(atts);
                   }
-                  res.setValue(res.getIndex(attrName), currentFile.toString());
+                  res.setValue(res.getIndex(attrName), corrected.toString());
                   logger.error(
                     MessageUtils.getMessage("DOTJ083E", abs.toString()).setLocation(locator).toString() +
                     ", using " +
